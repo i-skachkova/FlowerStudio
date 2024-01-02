@@ -1,0 +1,48 @@
+/*footer*/
+footer{
+    background-color: #000;
+    font-family: 'Inter';
+
+    padding: 72px 0;
+}
+footer .container{
+    display: flex;
+}
+.footer-logo{
+    margin-right: 210px;
+}
+.time-container{
+    margin: 0 96px;
+}
+.contacts-container{
+    margin-right: auto;
+}
+.footer-nav-list, .footer-contacts-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer-nav-title, .footer-time-title, .footer-contacts-title{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 18px;
+}
+.footer-nav-list-item-link, .footer-time, .footer-contacts-list-item-link, .footer-adress{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+.footer-time{
+    max-width: 97px;
+}
+.footer-adress{
+    max-width: 147px;
+}
+.footer-social-networks{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
