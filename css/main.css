@@ -182,7 +182,7 @@ button {
 }
 
 .delivery-backgroung {
-  background: url(../images/delivery-img.png) no-repeat;
+  background: url(../../images/delivery-img.png) no-repeat;
   background-size: cover;
   height: 391px;
 }
