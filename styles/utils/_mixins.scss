@@ -1,0 +1,5 @@
+@mixin button-animation($duration:5000ms){
+    animation-name: button-animation;
+    animation-iteration-count: infinite;
+    animation-duration: $duration;
+}

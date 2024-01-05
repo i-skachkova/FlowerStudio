@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./dist/css/main.min.css">
 </head>
 <body>
@@ -44,7 +45,7 @@
 
     <section class="hero" id="anemone">
         <div class="container hero__container">
-            <div class="hero__content">
+            <div class="hero__content ">
                 <p class="hero__text">flower studio</p>
                 <img src="./images/hero-img.png" alt="flower" class="hero__img">
                 <a href="#store" class="hero__link">
@@ -53,7 +54,7 @@
                     </svg>
                 </a>
             </div>
-            <h1 class="hero__title">ANEMONE</h1> 
+            <h1 class="hero__title" data-aos="fade-up" data-aos-duration="1500">ANEMONE</h1> 
         </div>
     </section>
 
@@ -64,8 +65,8 @@
                 <div class="line__line"></div>
             </div>
             <div class="about__content">
-                <p class="about__text">We are a minimalistic flower studio. We love people and flowers. Therefore, every day we give people the beauty and joy creating stylish and modern masterpieces. Every bouquet we create is unique as you are.</p>
-                <img src="./images/about-img.png" alt="flower" class="about__img">
+                <p class="about__text" data-aos="fade-up-right" data-aos-duration="1500">We are a minimalistic flower studio. We love people and flowers. Therefore, every day we give people the beauty and joy creating stylish and modern masterpieces. Every bouquet we create is unique as you are.</p>
+                <img src="./images/about-img.png" alt="flower" class="about__img" data-aos="fade-up-left" data-aos-duration="1500">
             </div>
         </div>
     </section>
@@ -77,7 +78,7 @@
                 <div class="line__line"></div>
             </div>
             <ul class="store__list">
-                <li class="store__item">
+                <li class="store__item" >
                     <img src="./images/store-img1.png" alt="bouquet" class="store__img">
                     <div class="line__box">
                         <h3 class="store__name">compliments</h3>
@@ -85,7 +86,7 @@
                     </div>
                     <p class="store__price">from $15</p>
                 </li>
-                <li class="store__item">
+                <li class="store__item" >
                     <img src="./images/store-img2.png" alt="bouquet" class="store__img">
                     <div class="line__box">
                         <h3 class="store__name">bouquets size S</h3>
@@ -93,7 +94,7 @@
                     </div>
                     <p class="store__price">from $25</p>
                 </li>
-                <li class="store__item">
+                <li class="store__item" >
                     <img src="./images/store-img3.png" alt="bouquet" class="store__img">
                     <div class="line__box">
                         <h3 class="store__name">bouquets size M</h3>
@@ -101,7 +102,7 @@
                     </div>
                     <p class="store__price">from $45</p>
                 </li>
-                <li class="store__item">
+                <li class="store__item" >
                     <img src="./images/store-img4.png" alt="bouquet" class="store__img">
                     <div class="line__box">
                         <h3 class="store__name">bouquets size L</h3>
@@ -234,5 +235,9 @@
             </ul>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

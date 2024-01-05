@@ -9,6 +9,26 @@
   transition-duration: 250ms;
 }
 
+@keyframes button-animation {
+  0% {
+    transform: scale(1);
+  }
+  18% {
+    transform: scale(1.2);
+  }
+  30% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.4);
+  }
+  70% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 body {
   font-family: "Montserrat";
   color: #000;
@@ -130,6 +150,9 @@ button {
   line-height: 85.714%;
   margin: 0 auto;
   transition-property: background, box-shadow;
+  animation-name: button-animation;
+  animation-iteration-count: infinite;
+  animation-duration: 5000ms;
 }
 .blog__button:hover, .blog__button:focus {
   background: #FA6F54;
@@ -351,6 +374,9 @@ button {
   margin-top: 60px;
   align-self: center;
   transition-property: background, box-shadow;
+  animation-name: button-animation;
+  animation-iteration-count: infinite;
+  animation-duration: 5000ms;
 }
 .store__button:hover, .store__button:focus {
   background: #FA6F54;

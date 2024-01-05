@@ -1,0 +1,20 @@
+@keyframes button-animation{
+    0%{
+        transform: scale(1);
+    }
+    18%{
+        transform: scale(1.2);
+    }
+    30%{
+        transform: scale(1);
+    }
+    40%{
+        transform: scale(1.4);
+    }
+    70%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

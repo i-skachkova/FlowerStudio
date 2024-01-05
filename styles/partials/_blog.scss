@@ -42,6 +42,8 @@
 
         transition-property: background, box-shadow;
         @extend %transition;
+
+        @include button-animation();
     }
     &__button:hover, &__button:focus{
         background: #FA6F54;
