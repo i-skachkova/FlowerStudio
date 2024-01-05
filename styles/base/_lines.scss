@@ -5,12 +5,12 @@
         gap: 16px;
     }
     &__line{
-        background-color: #000;
+        background-color: $text-color;
         width: 2000px;
         height: 1.5px;
     }
     &__list-line{
-        background-color: #000;
+        background-color: $text-color;
         width: 340px;
         height: 1.5px;
     }

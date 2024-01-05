@@ -11,10 +11,10 @@
         margin-right: 210px;
         width: 72px;
         height: 57px;
-        fill: #FFF;
+        fill: $text-footer;
     }
     &__title{
-        color: #FFF;
+        color: $text-footer;
         font-size: 20px;
         font-weight: 700;
         line-height: normal;
@@ -32,7 +32,7 @@
         max-width: 147px;
     }
     &__link, &__time, &__adress{
-        color: #FFF;
+        color: $text-footer;
         font-size: 16px;
         font-weight: 500;
         line-height: normal;
@@ -41,7 +41,7 @@
         @extend %transition;
     }
     &__link:hover, &__link:focus{
-        color: #FA6F54;
+        color: $main-color;
     }
     &__time-container{
         margin: 0 96px;
@@ -57,12 +57,12 @@
     &__sn-svg{
         width: 28px;
         height: 28px;
-        stroke: #FFF;
+        stroke: $text-footer;
 
         @extend %transition;
         transition-property: stroke;
     }
     &__sn-link:hover &__sn-svg, &__sn-link:focus &__sn-svg{
-        stroke: #FA6F54;
+        stroke: $main-color;
     }
 }

@@ -25,7 +25,7 @@
         @extend %transition;
     }
     &__link:hover &__svg, &__link:active &__svg{
-        fill: #FA6F54;
+        fill: $main-color;
     }
     &__title{
         font-size: 160px;

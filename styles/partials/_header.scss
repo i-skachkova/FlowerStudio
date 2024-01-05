@@ -24,7 +24,7 @@
         @extend %transition;
     }
     &__link:hover{
-        color: #FA6F54;
+        color: $main-color;
     }
     &__svg{
         width: 28px;
@@ -33,6 +33,6 @@
         @extend %transition;
     }
     &__tel:hover &__svg, &__tel:focus &__svg{
-        fill: #FA6F54;
+        fill: $main-color;
     }
 }

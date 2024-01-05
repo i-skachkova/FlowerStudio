@@ -1,4 +1,4 @@
-.store__button, .hero__content, .header__container, .delivery__circle, .about__content {
+.store__button, .hero__content, .header__container, .delivery__circle, .blog__button, .about__content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,7 +46,6 @@ h2 {
   width: 1262px;
   margin: 0 auto;
   padding: 0 15px;
-  /* outline: dashed red; */
 }
 
 .line__box {
@@ -137,12 +136,9 @@ button {
   text-align: center;
 }
 .blog__button {
-  display: flex;
   width: 280px;
   height: 64px;
   padding: 16px 32px;
-  justify-content: center;
-  align-items: center;
   border-radius: 38px;
   background-color: #E86F54;
   border: none;
