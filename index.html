@@ -14,7 +14,9 @@
 <body>
     <header class="header">
         <div class="container header__container">
-            <img src="./images/logo-black.png" alt="logo" class="logo-img">
+            <svg class="header__logo">
+                <use href="./images/symbol-defs.svg#icon-logo"></use>
+            </svg>
             <ul class="header__list">
                 <li class="header__item">
                     <a href="#anemone" class="header__link">Anemone</a>
@@ -32,9 +34,11 @@
                     <a href="#blog" class="header__link">Blog</a>
                 </li>
             </ul>
-            <button class="header__button" type="button">
-                <img src="./images/contact-us-img.png" alt="tel" class="header__button-img">
-            </button>
+            <a href="tel:+380631234567" class="header__tel">
+                <svg class="header__svg">
+                    <use href="./images/symbol-defs.svg#icon-tel"></use>
+                </svg>
+            </a>
         </div>
     </header>
 
@@ -44,7 +48,9 @@
                 <p class="hero__text">flower studio</p>
                 <img src="./images/hero-img.png" alt="flower" class="hero__img">
                 <a href="#store" class="hero__link">
-                    <img src="./images/hero-link-img.png" alt="shop now" class="hero__link-img">
+                    <svg class="hero__svg">
+                        <use href="./images/symbol-defs.svg#icon-hero-button"></use>
+                    </svg>
                 </a>
             </div>
             <h1 class="hero__title">ANEMONE</h1> 
@@ -172,7 +178,9 @@
 
     <footer class="footer">
         <div class="container footer__container">
-            <img src="./images/logo-white.png" alt="logo" class="logo-img footer__logo">
+            <svg class="footer__logo">
+                <use href="./images/symbol-defs.svg#icon-logo"></use>
+            </svg>
             <div class="nav-container">
                 <h3 class="footer__title">Navigation</h3>
                 <ul class="footer__list">
@@ -211,12 +219,16 @@
             <ul class="footer__sn">
                 <li class="footer__sn-item">
                     <a href="#" class="footer__sn-link">
-                        <img src="./images/inst-img.png" alt="inst" class="footer__sn-img">
+                        <svg class="footer__sn-svg">
+                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
                     </a>
                 </li>
                 <li class="footer__sn-item">
                     <a href="#" class="footer__sn-link">
-                        <img src="./images/fb-img.png" alt="facebook" class="footer__sn-img">
+                        <svg class="footer__sn-svg">
+                            <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
                     </a>
                 </li>
             </ul>

@@ -7,6 +7,10 @@
         @extend %flex;
         justify-content: space-between;
     }
+    &__logo{
+        width: 72px;
+        height: 57px;
+    }
     &__list{
         display: flex;
         gap: 48px;
@@ -22,14 +26,13 @@
     &__link:hover{
         color: #FA6F54;
     }
-    &__button{
-        background: transparent;
-        border: none;
+    &__svg{
         width: 28px;
         height: 28px;
+        transition-property: fill;
+        @extend %transition;
     }
-}
-.logo-img{
-    width: 72px;
-    height: 57px;
+    &__tel:hover &__svg, &__tel:focus &__svg{
+        fill: #FA6F54;
+    }
 }

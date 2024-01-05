@@ -18,9 +18,14 @@
         max-width: 390px;
         max-height: 636px;
     }
-    &__link-img{
-        max-width: 166px;
-        max-height: 166px;
+    &__svg{
+        width: 166px;
+        height: 166px;
+        transition-property: fill;
+        @extend %transition;
+    }
+    &__link:hover &__svg, &__link:active &__svg{
+        fill: #FA6F54;
     }
     &__title{
         font-size: 160px;

@@ -9,6 +9,9 @@
     }
     &__logo{
         margin-right: 210px;
+        width: 72px;
+        height: 57px;
+        fill: #FFF;
     }
     &__title{
         color: #FFF;
@@ -33,6 +36,12 @@
         font-size: 16px;
         font-weight: 500;
         line-height: normal;
+
+        transition-property: color;
+        @extend %transition;
+    }
+    &__link:hover, &__link:focus{
+        color: #FA6F54;
     }
     &__time-container{
         margin: 0 96px;
@@ -44,5 +53,16 @@
         display: flex;
         flex-direction: column;
         gap: 18px;
+    }
+    &__sn-svg{
+        width: 28px;
+        height: 28px;
+        stroke: #FFF;
+
+        @extend %transition;
+        transition-property: stroke;
+    }
+    &__sn-link:hover &__sn-svg, &__sn-link:focus &__sn-svg{
+        stroke: #FA6F54;
     }
 }
