@@ -1,16 +1,17 @@
-.title-line{
-    background-color:  #000;
-    width: 2000px;
-    height: 1.5px;
-}
-.title-and-line, .item-and-line{
-    display: flex;
-    align-items: center; 
-    gap: 16px;
-}
-
-.list-item-line{
-    background-color:  #000;
-    width: 340px;
-    height: 1.5px;
+.line{
+    &__box{
+        display: flex;
+        align-items: center; 
+        gap: 16px;
+    }
+    &__line{
+        background-color: #000;
+        width: 2000px;
+        height: 1.5px;
+    }
+    &__list-line{
+        background-color: #000;
+        width: 340px;
+        height: 1.5px;
+    }
 }

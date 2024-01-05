@@ -1,60 +1,60 @@
 /*store*/
-.store .container{
-    margin-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-}
-.store-list{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 64px 32px;
-    margin-top: 80px;
-}
-.store-list-item{
-    width:  600px;
-}
-.store-list-item-img{
-    max-width: 600px;
-    max-height: 542px;
-    margin-bottom: 16px;
-}
-.store-list-item-name{
-    font-size: 36px;
-    font-weight: 500;
-    line-height: normal;
-    white-space: nowrap;
-}
-.store-list-item-price{
-    font-size: 28px;
-    font-weight: 600;
-    line-height: normal;
-    margin-top: 4px;
+.store{
+    &__container{
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 64px 32px;
+        margin-top: 80px;
+    }
+    &__item{
+        width:  600px;
+    }
+    &__img{
+        max-width: 600px;
+        max-height: 542px;
+        margin-bottom: 16px;
+    }
+    &__name{
+        font-size: 36px;
+        font-weight: 500;
+        line-height: normal;
+        white-space: nowrap;
+    }
+    &__price{
+        font-size: 28px;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: 4px;
+    
+        opacity: 0.6000000238418579;
+    }
+    &__button{
+        @extend %flex;
+        width: 280px;
+        height: 64px;
+        padding: 16px 32px;
+    
+        border-radius: 38px;
+        background-color: #E86F54;
+        border: none;
+        color: #FFF;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 85.714%;
+    
+        margin-top: 60px;
+        align-self: center;
 
-    opacity: 0.6000000238418579;
-}
-.store-button{
-    display: flex;
-    width: 280px;
-    height: 64px;
-    padding: 16px 32px;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 38px;
-    background-color: #E86F54;
-    border: none;
-    color: #FFF;
-    font-size: 28px;
-    font-weight: 500;
-    line-height: 85.714%;
-
-    margin-top: 60px;
-    align-self: center;
-}
-.store-button:hover{
-    background: #E25B41;
-}
-.store-button:focus{
-    background: #FA6F54;
-    box-shadow: 0px 4px 16px 0px rgba(250, 111, 84, 0.20);
+        transition-property: background, box-shadow;
+        @extend %transition;
+    }
+    &__button:hover, &__button:focus{
+        background: #FA6F54;
+        box-shadow: 0px 4px 16px 0px rgba(250, 111, 84, 0.20);
+    }
 }

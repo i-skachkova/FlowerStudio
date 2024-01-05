@@ -1,28 +1,34 @@
 /*hero*/
-.anemone-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 110px;
-}
-.hero-text{
-    font-size: 32px;
-    font-weight: 400;
-    line-height: normal;
+.hero{
+    &__container{
+        position: relative;
+    }
+    &__content{
+        @extend %flex;
+        gap: 110px;
+    }
+    &__text{
+        font-size: 32px;
+        font-weight: 400;
+        line-height: normal;
+    
+        max-width: 101px;
+    }
+    &__img{
+        max-width: 390px;
+        max-height: 636px;
+    }
+    &__link-img{
+        max-width: 166px;
+        max-height: 166px;
+    }
+    &__title{
+        font-size: 160px;
+        font-weight: 400;
+        line-height: normal;
 
-    max-width: 101px;
-}
-.hero-img{
-    max-width: 390px;
-    max-height: 636px;
-}
-.hero-link-img{
-    max-width: 166px;
-    max-height: 166px;
-}
-.hero-title{
-    text-align: center;
-    font-size: 160px;
-    font-weight: 400;
-    line-height: normal;
+        position: absolute;
+        top: 530px;
+        left: 177.5px;
+    }
 }
