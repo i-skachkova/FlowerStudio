@@ -32,6 +32,7 @@
 body {
   font-family: "Montserrat";
   color: #000;
+  scroll-behavior: smooth;
 }
 
 h2 {
@@ -113,7 +114,8 @@ button {
 
 /*blog*/
 .blog__container {
-  padding: 100px 0;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .blog__list {
   margin-top: 122px;
