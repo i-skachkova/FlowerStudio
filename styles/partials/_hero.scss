@@ -24,7 +24,7 @@
         transition-property: fill;
         @extend %transition;
     }
-    &__link:hover &__svg, &__link:active &__svg{
+    &__link:hover &__svg, &__link:focus &__svg{
         fill: $main-color;
     }
     &__title{

@@ -279,7 +279,7 @@ button {
   line-height: normal;
   transition-property: color;
 }
-.header__link:hover {
+.header__link:hover, .header__link:focus {
   color: #FA6F54;
 }
 .header__svg {
@@ -313,7 +313,7 @@ button {
   height: 166px;
   transition-property: fill;
 }
-.hero__link:hover .hero__svg, .hero__link:active .hero__svg {
+.hero__link:hover .hero__svg, .hero__link:focus .hero__svg {
   fill: #FA6F54;
 }
 .hero__title {

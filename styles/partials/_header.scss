@@ -23,7 +23,7 @@
         transition-property: color;
         @extend %transition;
     }
-    &__link:hover{
+    &__link:hover, &__link:focus{
         color: $main-color;
     }
     &__svg{
