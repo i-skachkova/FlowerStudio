@@ -43,9 +43,16 @@ h2 {
 }
 
 .container {
-  width: 1262px;
+  outline: 1px solid red;
+  max-width: 1262px;
+  width: auto;
   margin: 0 auto;
   padding: 0 15px;
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .line__box {
@@ -263,15 +270,36 @@ button {
 .header__container {
   margin-top: 28px;
   margin-bottom: 64px;
-  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    justify-content: space-between;
+  }
 }
 .header__logo {
-  width: 72px;
-  height: 57px;
+  width: 45px;
+  height: 35px;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    width: 72px;
+    height: 57px;
+  }
 }
 .header__list {
-  display: flex;
-  gap: 48px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__list {
+    display: flex;
+    gap: 38px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__list {
+    gap: 48px;
+  }
 }
 .header__link {
   font-size: 20px;
@@ -283,12 +311,26 @@ button {
   color: #FA6F54;
 }
 .header__svg {
-  width: 28px;
-  height: 28px;
+  width: 20px;
+  height: 20px;
   transition-property: fill;
+}
+@media screen and (min-width: 768px) {
+  .header__svg {
+    width: 28px;
+    height: 28px;
+  }
 }
 .header__tel:hover .header__svg, .header__tel:focus .header__svg {
   fill: #FA6F54;
+}
+.header__menu {
+  margin-left: 15px;
+}
+@media screen and (min-width: 768px) {
+  .header__menu {
+    display: none;
+  }
 }
 
 /*hero*/

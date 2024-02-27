@@ -11,7 +11,13 @@ h2{
     text-transform: uppercase;
 }
 .container{
-    width: 1262px;
+    outline: 1px solid red;
+    max-width: 1262px;
+    width: auto;
     margin: 0 auto;
     padding: 0 15px;
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
