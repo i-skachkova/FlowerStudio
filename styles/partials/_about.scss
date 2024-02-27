@@ -6,19 +6,37 @@
     }
     &__content{
         @extend %flex;
+        flex-wrap: wrap;
         gap: 90px;
     
         margin-top: 26px;
+        @media screen and (min-width: 768px){
+            flex-wrap: nowrap;
+        }
     }
     &__text{
-        font-size: 22px;
+        font-size: 16px;
         font-weight: 400;
         line-height: normal;
     
         max-width: 510px;
+        @media screen and (min-width: 768px){
+            font-size: 20px;
+        }
+        @media screen and (min-width: 1200px){
+            font-size: 22px;
+        }
     }
     &__img{
-        width: 632px;
-        height: 344px;
+        width: 288px;
+        height: 178px;
+        @media screen and (min-width: 768px){
+            width: 344px;
+            height: 217px;
+        }
+        @media screen and (min-width: 1200px){
+            width: 632px;
+            height: 344px;
+        }
     }
 }

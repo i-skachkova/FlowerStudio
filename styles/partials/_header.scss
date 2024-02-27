@@ -1,9 +1,14 @@
 /*header*/
 .header{
+    padding-top: 28px;
+    padding-bottom: 20px;
+    @media screen and (min-width: 768px){
+        padding-bottom: 40px;
+    }
+    @media screen and (min-width: 1200px){
+        padding-bottom: 64px;
+    }
     &__container{
-        margin-top: 28px;
-        margin-bottom: 64px;
-    
         @extend %flex;
         
         @media screen and (min-width: 768px){
@@ -26,10 +31,12 @@
 
         @media screen and (min-width: 768px){
             display: flex;
-            gap: 38px;
+            gap: 20px;
+            margin-right: 150px;
         }
         @media screen and (min-width: 1200px){
             gap: 48px;
+            margin-right: 300px;
         }
 
     }
@@ -55,11 +62,18 @@
             height: 28px;
         }
     }
+    &__btn{
+        background-color: transparent;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     &__tel:hover &__svg, &__tel:focus &__svg{
         fill: $main-color;
     }
     &__menu{
-        margin-left: 15px;
+        margin-left: 5px;
         @media screen and (min-width: 768px) {
             display: none;
         }

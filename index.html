@@ -35,18 +35,20 @@
                     <a href="#blog" class="header__link">Blog</a>
                 </li>
             </ul>
-            <a href="tel:+380631234567" class="header__tel">
+            <button type="button" class="header__tel header__btn">
                 <svg class="header__svg">
                     <use href="./images/symbol-defs.svg#icon-tel"></use>
                 </svg>
-            </a>
-            <button class="header__menu">
-                
+            </button>
+            <button class="header__menu header__btn" data-menu-open>
+                <svg class="header__svg">
+                    <use href="./images/symbol-defs.svg#icon-menu"></use>
+                </svg>
             </button>
         </div>
     </header>
 
-    <!-- <section class="hero" id="anemone">
+    <section class="hero" id="anemone">
         <div class="container hero__container">
             <div class="hero__content ">
                 <p class="hero__text">flower studio</p>
@@ -59,9 +61,9 @@
             </div>
             <h1 class="hero__title" data-aos="fade-up" data-aos-duration="1500">ANEMONE</h1> 
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="about" id="about">
+    <section class="about" id="about">
         <div class="container about__container">
             <div class="line__box">
                 <h2 class="line__title">About</h2>
@@ -72,7 +74,7 @@
                 <img src="./images/about-img.png" alt="flower" class="about__img" data-aos="fade-up-left" data-aos-duration="1500">
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- <section class="store" id="store">
         <div class="container store__container">
@@ -238,7 +240,34 @@
             </ul>
         </div>
     </footer> -->
+
+    <div class="mobile-menu is-hidden" data-menu>
+            <button class="mobile-menu__btn" data-menu-close>
+                <svg class="mobile-menu__svg">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a href="#anemone" class="mobile-menu__link">Anemone</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#about" class="mobile-menu__link">About us</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#store" class="mobile-menu__link">Store</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#delivery" class="mobile-menu__link">Delivery</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#blog" class="mobile-menu__link">Blog</a>
+                </li>
+            </ul>
+    </div>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./menu.js"></script>
     <script>
         AOS.init();
     </script>
