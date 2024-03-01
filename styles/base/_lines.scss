@@ -13,6 +13,10 @@
         background-color: $text-color;
         width: 340px;
         height: 1.5px;
+        display: none;
+        @media screen and (min-width: 768px){
+            display: block;
+        }
     }
     &__title{
         font-size: 24px;

@@ -8,34 +8,61 @@
     &__list{
         display: flex;
         flex-wrap: wrap;
-        gap: 64px 32px;
+        gap: 18px 16px;
         margin-top: 80px;
+        @media screen and (min-width: 768px) {
+            gap: 42px 32px;
+        }
+        @media screen and (min-width: 1200px) {
+            gap: 64px 32px;
+        }
     }
     &__item{
-        width:  600px;
+        max-width: 600px;
+        width: calc((100% - 46px)/2);
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 62px)/2);
+        }
     }
     &__img{
         max-width: 600px;
         max-height: 542px;
         margin-bottom: 16px;
+        width: calc(100%);
+        @media screen and (min-width: 768px) {
+            width: calc(100%);
+        }
     }
     &__name{
-        font-size: 36px;
+        font-size: 16px;
         font-weight: 500;
         line-height: normal;
         white-space: nowrap;
+        @media screen and (min-width: 768px) {
+           font-size: 32px;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 36px;
+        }
     }
     &__price{
-        font-size: 28px;
+        font-size: 12px;
         font-weight: 600;
         line-height: normal;
         margin-top: 4px;
     
         opacity: 0.6000000238418579;
+
+        @media screen and (min-width: 768px) {
+            font-size: 24px;
+         }
+         @media screen and (min-width: 1200px) {
+             font-size: 28px;
+         }
     }
     &__button{
         @extend %flex;
-        width: 280px;
+        width: 200px;
         height: 64px;
         padding: 16px 32px;
     
@@ -43,7 +70,7 @@
         background-color: $button-color;
         border: none;
         color: $text-footer;
-        font-size: 28px;
+        font-size: 18px;
         font-weight: 500;
         line-height: 85.714%;
     
@@ -54,6 +81,11 @@
         @extend %transition;
 
         @include button-animation;
+
+        @media screen and (min-width: 768px) {
+            width: 280px;
+            font-size: 28px;
+        }
     }
     &__button:hover, &__button:focus{
         background: $main-color;
