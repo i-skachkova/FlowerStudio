@@ -230,12 +230,24 @@ button {
   margin-bottom: 100px;
 }
 .blog__list {
-  margin-top: 122px;
-  margin-bottom: 44px;
+  margin-top: 32px;
+  margin-bottom: 28px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 32px;
+}
+@media screen and (min-width: 768px) {
+  .blog__list {
+    margin-top: 60px;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .blog__list {
+    margin-top: 122px;
+    margin-bottom: 44px;
+  }
 }
 .blog__img {
   height: 181px;
@@ -247,35 +259,53 @@ button {
     height: 398px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .blog__img {
     width: 390px;
     height: 421px;
   }
 }
 .blog__text {
-  font-size: 32px;
+  font-size: 18px;
   font-weight: 500;
   line-height: normal;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .blog__text {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .blog__text {
+    margin-bottom: 48px;
+  }
+}
 .blog__button {
-  width: 280px;
-  height: 64px;
-  padding: 16px 32px;
+  width: 170px;
+  height: 40px;
+  padding: 14px 28px;
   border-radius: 38px;
   background-color: #E86F54;
   border: none;
   color: #FFF;
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 500;
-  line-height: 85.714%;
+  line-height: 13.33;
   margin: 0 auto;
   transition-property: background, box-shadow;
   animation-name: button-animation;
   animation-iteration-count: infinite;
   animation-duration: 5000ms;
+}
+@media screen and (min-width: 768px) {
+  .blog__button {
+    width: 280px;
+    height: 64px;
+    font-size: 28px;
+  }
 }
 .blog__button:hover, .blog__button:focus {
   background: #FA6F54;
@@ -365,12 +395,25 @@ button {
 }
 .footer__container {
   display: flex;
+  flex-wrap: wrap;
+  gap: 44px;
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    flex-wrap: nowrap;
+  }
 }
 .footer__logo {
   margin-right: 210px;
   width: 72px;
   height: 57px;
   fill: #FFF;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    display: block;
+  }
 }
 .footer__title {
   color: #FFF;
@@ -400,16 +443,22 @@ button {
 .footer__link:hover, .footer__link:focus {
   color: #FA6F54;
 }
-.footer__time-container {
-  margin: 0 96px;
-}
 .footer__contacts-container {
-  margin-right: auto;
+  margin-right: 32px;
+}
+@media screen and (min-width: 768px) {
+  .footer__contacts-container {
+    margin-right: auto;
+  }
 }
 .footer__sn {
   display: flex;
-  flex-direction: column;
   gap: 18px;
+}
+@media screen and (min-width: 768px) {
+  .footer__sn {
+    flex-direction: column;
+  }
 }
 .footer__sn-svg {
   width: 28px;

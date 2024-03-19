@@ -5,13 +5,22 @@
         margin-bottom: 100px;
     }
     &__list{
-        margin-top: 122px;
-        margin-bottom: 44px;
+        margin-top: 32px;
+        margin-bottom: 28px;
     
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 32px;
+
+        @media screen and (min-width: 768px){
+            margin-top: 60px;
+            margin-bottom: 32px;
+        }
+        @media screen and (min-width: 1200px){
+            margin-top: 122px;
+            margin-bottom: 44px;
+        }
     }
     &__img{
         height: 181px;
@@ -20,37 +29,51 @@
             width: 344px;
             height: 398px;
         }
-        @media screen and (min-width: 768px){
+        @media screen and (min-width: 1200px){
             width: 390px;
             height: 421px;
         }
     }
     &__text{
-        font-size: 32px;
+        font-size: 18px;
         font-weight: 500;
         line-height: normal;
-        margin-bottom: 48px;
+        margin-bottom: 32px;
         text-align: center;
+
+        @media screen and (min-width: 768px){
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+        @media screen and (min-width: 1200px){
+            margin-bottom: 48px;
+        }
     }
     &__button{
         @extend %flex;
-        width: 280px;
-        height: 64px;
-        padding: 16px 32px;
+        width: 170px;
+        height: 40px;
+        padding: 14px 28px;
     
         border-radius: 38px;
         background-color: $button-color;
         border: none;
         color: #FFF;
-        font-size: 28px;
+        font-size: 18px;
         font-weight: 500;
-        line-height: 85.714%;
+        line-height: 13.33;
         margin: 0 auto;
 
         transition-property: background, box-shadow;
         @extend %transition;
 
         @include button-animation();
+
+        @media screen and (min-width: 768px) {
+            width: 280px;
+            height: 64px;
+            font-size: 28px;
+        }
     }
     &__button:hover, &__button:focus{
         background: $main-color;

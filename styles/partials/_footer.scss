@@ -6,12 +6,24 @@
 
     &__container{
         display: flex;
+        flex-wrap: wrap;
+        gap: 44px;
+        // justify-content: center;
+        @media screen and (min-width: 768px) {
+            flex-wrap: nowrap;
+        }
+
     }
     &__logo{
         margin-right: 210px;
         width: 72px;
         height: 57px;
         fill: $text-footer;
+
+        display: none;
+        @media screen and (min-width: 1200px) {
+            display: block;
+        }
     }
     &__title{
         color: $text-footer;
@@ -43,16 +55,23 @@
     &__link:hover, &__link:focus{
         color: $main-color;
     }
-    &__time-container{
-        margin: 0 96px;
-    }
+    // &__nav-container{
+    //     margin-bottom: 32px;
+    // }
     &__contacts-container{
-        margin-right: auto;
+        margin-right: 32px;
+        @media screen and (min-width: 768px) {
+            margin-right: auto;
+        }
+
     }
     &__sn{
         display: flex;
-        flex-direction: column;
         gap: 18px;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: column;
+        }
     }
     &__sn-svg{
         width: 28px;
