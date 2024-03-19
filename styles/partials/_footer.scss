@@ -8,7 +8,6 @@
         display: flex;
         flex-wrap: wrap;
         gap: 44px;
-        // justify-content: center;
         @media screen and (min-width: 768px) {
             flex-wrap: nowrap;
         }
