@@ -51,9 +51,16 @@
     &__backgroung{
         background: url(../../images/delivery-img.png) no-repeat;
         background-size: contain;
-        height: 391px;
+        height: 150px;
+        @media screen and (min-width: 499px) {
+            height: 200px;
+        }
+        @media screen and (min-width: 660px) {
+            height: 250px;
+        }
         @media screen and (min-width: 768px) {
             background-size: cover;
+            height: 391px;
         }
     }
 }

@@ -238,8 +238,20 @@ button {
   gap: 32px;
 }
 .blog__img {
-  width: 390px;
-  height: 421px;
+  height: 181px;
+  width: 153px;
+}
+@media screen and (min-width: 768px) {
+  .blog__img {
+    width: 344px;
+    height: 398px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .blog__img {
+    width: 390px;
+    height: 421px;
+  }
 }
 .blog__text {
   font-size: 32px;
@@ -326,11 +338,22 @@ button {
 .delivery__backgroung {
   background: url(../../images/delivery-img.png) no-repeat;
   background-size: contain;
-  height: 391px;
+  height: 150px;
+}
+@media screen and (min-width: 499px) {
+  .delivery__backgroung {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 660px) {
+  .delivery__backgroung {
+    height: 250px;
+  }
 }
 @media screen and (min-width: 768px) {
   .delivery__backgroung {
     background-size: cover;
+    height: 391px;
   }
 }
 
